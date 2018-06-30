@@ -23,4 +23,18 @@ VALUES
   ('1000 iphone6', 100, '2005-11-01 00:00:00', '2026-11-02 00:00:00'),
   ('500 ipad2', 200, '2005-11-01 00:00:00', '2026-11-02 00:00:00'),
   ('300 mi4', 300, '2005-11-01 00:00:00', '2026-11-02 00:00:00'),
-  ('200 mi note', 300, '2005-11-01 00:00:00', '2026-11-02 00:00:00'),
+  ('200 mi note', 300, '2005-11-01 00:00:00', '2026-11-02 00:00:00');
+
+
+
+CREATE TABLE success_kill(
+ `seckill_id` bigint  NOT NULL COMMIT 'kill good',
+ `user_phone` bigint NOT NULL 'user phone',
+ `state` tinyint NOT NULL DEFAULT -1 COMMIT '-1 invaild; 0 success; 1 havepayment',
+ `create_time` TIMESTAMP NOT NULL COMMIT 'create time',
+ PRIMARY KEY (seckill_id, user_phone),
+ KEY idx_create_time(create_time)
+)ENGINE=InnoDB AUTO_INCREMENT= 1000 DEFAULT CHARSET=utf8 COMMIT ='skill datebase table success';
+
+
+
