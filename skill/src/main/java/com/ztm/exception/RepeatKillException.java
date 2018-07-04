@@ -1,6 +1,6 @@
 package com.ztm.exception;
 
-public class RepeatKillException  extends RuntimeException{
+public class RepeatKillException  extends SeckillException{
 
     public RepeatKillException(String message){
         super(message);
