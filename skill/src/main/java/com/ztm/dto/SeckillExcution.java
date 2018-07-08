@@ -24,6 +24,10 @@ public class SeckillExcution {
         this.stateInfo = stateInfo;
     }
 
+    public SeckillExcution(String stateInfo){
+        this.stateInfo = stateInfo;
+    }
+
     public long getSeckillId() {
         return seckillId;
     }

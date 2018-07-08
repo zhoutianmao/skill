@@ -13,7 +13,7 @@ public interface SeckillService {
 
     List<Seckill> getSeckillList();
 
-    public Exposer getById(long seckillId);
+    public Seckill getById(long seckillId);
 
     Exposer exportSeckillUrl(long seckillId);
 
