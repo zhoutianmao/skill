@@ -9,11 +9,11 @@
         UPDATE
               seckill
         SET
-              number = numbser -1
+              number = number -1
         WHERE
-              seckill_id = #{seckillId}
-        AND start_time &lt;= #{killTime}
-        AND end_time &gt;= #{killTime}
+              seckill_id = #{0}
+        AND start_time &lt;= #{1}
+        AND end_time &gt;= #{1}
         AND number > 0;
     </update>
 
@@ -27,7 +27,7 @@
         SELECT seckill_id, name, number, start_time, end_time, create_time
         FROM seckill
         ORDER BY create_time DESC
-        limit #{offset}, #{limit};
+        limit #{0}, #{1};
     </select>
 
 </mapper>
